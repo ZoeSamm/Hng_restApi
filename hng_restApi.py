@@ -6,7 +6,7 @@ from random import randint
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '56743'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///project.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("Postgres")
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)

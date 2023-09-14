@@ -1,1 +1,1 @@
-web gunicorn app:app
+web gunicorn hng_restApi:app
