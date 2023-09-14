@@ -1,7 +1,6 @@
 import os
 from flask import Flask, jsonify, request
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy.orm.exc import NoResultFound
 from random import randint
 
 app = Flask(__name__)
